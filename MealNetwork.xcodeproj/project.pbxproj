@@ -12,6 +12,11 @@
 		024069F127AC175E000296D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024069EF27AC175E000296D9 /* Main.storyboard */; };
 		024069F327AC1763000296D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024069F227AC1763000296D9 /* Assets.xcassets */; };
 		024069F627AC1763000296D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024069F427AC1763000296D9 /* LaunchScreen.storyboard */; };
+		024069FE27AD2F3A000296D9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024069FD27AD2F3A000296D9 /* Meal.swift */; };
+		02406A0027AD2F71000296D9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024069FF27AD2F71000296D9 /* NetworkManager.swift */; };
+		02406A0227AD33B1000296D9 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02406A0127AD33B1000296D9 /* ImageManager.swift */; };
+		02406A0427AD3FA7000296D9 /* CategoriesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02406A0327AD3FA7000296D9 /* CategoriesTableVC.swift */; };
+		02B71B2127AEF80100C8A5F7 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B71B2027AEF80100C8A5F7 /* CategoriesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		024069F227AC1763000296D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		024069F527AC1763000296D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		024069F727AC1763000296D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024069FD27AD2F3A000296D9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		024069FF27AD2F71000296D9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		02406A0127AD33B1000296D9 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		02406A0327AD3FA7000296D9 /* CategoriesTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableVC.swift; sourceTree = "<group>"; };
+		02B71B2027AEF80100C8A5F7 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				024069E927AC175E000296D9 /* AppDelegate.swift */,
+				02B71B2027AEF80100C8A5F7 /* CategoriesTableViewCell.swift */,
 				024069EB27AC175E000296D9 /* SceneDelegate.swift */,
 				024069EF27AC175E000296D9 /* Main.storyboard */,
+				024069FD27AD2F3A000296D9 /* Meal.swift */,
+				024069FF27AD2F71000296D9 /* NetworkManager.swift */,
+				02406A0327AD3FA7000296D9 /* CategoriesTableVC.swift */,
+				02406A0127AD33B1000296D9 /* ImageManager.swift */,
 				024069F227AC1763000296D9 /* Assets.xcassets */,
 				024069F427AC1763000296D9 /* LaunchScreen.storyboard */,
 				024069F727AC1763000296D9 /* Info.plist */,
@@ -135,7 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02406A0027AD2F71000296D9 /* NetworkManager.swift in Sources */,
+				02406A0227AD33B1000296D9 /* ImageManager.swift in Sources */,
 				024069EA27AC175E000296D9 /* AppDelegate.swift in Sources */,
+				02406A0427AD3FA7000296D9 /* CategoriesTableVC.swift in Sources */,
+				024069FE27AD2F3A000296D9 /* Meal.swift in Sources */,
+				02B71B2127AEF80100C8A5F7 /* CategoriesTableViewCell.swift in Sources */,
 				024069EC27AC175E000296D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
