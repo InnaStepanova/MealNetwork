@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class NetworkManager {
     
@@ -92,10 +93,25 @@ class ImageManager {
     
     private init() {}
 
-    func fetchImage(from url: String?) -> Data? {
-        guard let stringURL = url else {return nil}
-        guard let imageURL = URL(string: stringURL) else {return nil} // Поставить заглушку в случае неудачи
-        return try? Data(contentsOf: imageURL)
+    func fetchImage(from url: String?, with complition: @escaping (UIImage) -> Void) {
+        guard let stringURL = url else {return}
+        guard let imageURL = URL(string: stringURL) else {return} // Поставить заглушку в случае неудачи
+        URLSession.shared.dataTask(with: imageURL) { data, responce, error in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            if let responce = responce {
+                print(responce)
+            }
+            
+            guard let data = data else {return}
+            guard let image = UIImage(data: data) else {return}
+                DispatchQueue.main.async {
+                    complition(image)
+                }
+        }.resume()
     }
 }
 
