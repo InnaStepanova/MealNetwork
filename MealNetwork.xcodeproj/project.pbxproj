@@ -16,6 +16,7 @@
 		02406A0027AD2F71000296D9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024069FF27AD2F71000296D9 /* NetworkManager.swift */; };
 		02406A0427AD3FA7000296D9 /* CategoriesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02406A0327AD3FA7000296D9 /* CategoriesTableVC.swift */; };
 		02B71B2927B05C4E00C8A5F7 /* MealsInCategoryTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B71B2827B05C4E00C8A5F7 /* MealsInCategoryTableVC.swift */; };
+		02B71B2B27B1B28900C8A5F7 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B71B2A27B1B28900C8A5F7 /* MealViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		024069FF27AD2F71000296D9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		02406A0327AD3FA7000296D9 /* CategoriesTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableVC.swift; sourceTree = "<group>"; };
 		02B71B2827B05C4E00C8A5F7 /* MealsInCategoryTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsInCategoryTableVC.swift; sourceTree = "<group>"; };
+		02B71B2A27B1B28900C8A5F7 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				024069E927AC175E000296D9 /* AppDelegate.swift */,
 				024069EB27AC175E000296D9 /* SceneDelegate.swift */,
 				024069EF27AC175E000296D9 /* Main.storyboard */,
+				02B71B2A27B1B28900C8A5F7 /* MealViewController.swift */,
 				02B71B2827B05C4E00C8A5F7 /* MealsInCategoryTableVC.swift */,
 				02406A0327AD3FA7000296D9 /* CategoriesTableVC.swift */,
 				024069FD27AD2F3A000296D9 /* Meal.swift */,
@@ -150,6 +153,7 @@
 				02406A0027AD2F71000296D9 /* NetworkManager.swift in Sources */,
 				02B71B2927B05C4E00C8A5F7 /* MealsInCategoryTableVC.swift in Sources */,
 				024069EA27AC175E000296D9 /* AppDelegate.swift in Sources */,
+				02B71B2B27B1B28900C8A5F7 /* MealViewController.swift in Sources */,
 				02406A0427AD3FA7000296D9 /* CategoriesTableVC.swift in Sources */,
 				024069FE27AD2F3A000296D9 /* Meal.swift in Sources */,
 				024069EC27AC175E000296D9 /* SceneDelegate.swift in Sources */,

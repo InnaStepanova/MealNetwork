@@ -38,7 +38,7 @@ class CategoriesTableVC: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let mealsInCategoryVC = segue.destination as? MealsInCategoryTableVC else {return}
         guard let indexPath = tableView.indexPathForSelectedRow else {return}
-        mealsInCategoryVC.categoryName = "https://www.themealdb.com/api/json/v1/1/filter.php?c=\(categories?.categories[indexPath.row].strCategory ?? "0")"
+        mealsInCategoryVC.categoryName = categories?.categories[indexPath.row].strCategory
     }
 }
 

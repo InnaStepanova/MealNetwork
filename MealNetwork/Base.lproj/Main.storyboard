@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="2083" y="-25"/>
         </scene>
-        <!--Meals In Category TableVC-->
+        <!--Meals in category-->
         <scene sceneID="F3K-mf-wJt">
             <objects>
                 <tableViewController id="kWr-8i-ngr" customClass="MealsInCategoryTableVC" customModule="MealNetwork" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,6 +77,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="946-Gg-UPn" kind="show" id="rLu-yg-Kqq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -83,11 +87,53 @@
                             <outlet property="delegate" destination="kWr-8i-ngr" id="cbK-LS-CUu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1Eo-tk-ul2"/>
+                    <navigationItem key="navigationItem" title="Meals in category" id="1Eo-tk-ul2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNi-di-T3l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2848" y="-27"/>
+        </scene>
+        <!--Meal View Controller-->
+        <scene sceneID="FKE-xn-YeA">
+            <objects>
+                <viewController id="946-Gg-UPn" customClass="MealViewController" customModule="MealNetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4bM-EE-fni">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="7D0-0c-HQt">
+                                <rect key="frame" x="32" y="200" width="350" height="646"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hKf-Xw-tzX">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNO-yH-TL9">
+                                        <rect key="frame" x="0.0" y="158" width="350" height="488"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2xp-gd-Klz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2xp-gd-Klz" firstAttribute="bottom" secondItem="7D0-0c-HQt" secondAttribute="bottom" constant="16" id="C8j-Ql-ftU"/>
+                            <constraint firstItem="7D0-0c-HQt" firstAttribute="top" secondItem="4bM-EE-fni" secondAttribute="top" constant="200" id="K3q-oT-zs9"/>
+                            <constraint firstItem="2xp-gd-Klz" firstAttribute="trailing" secondItem="7D0-0c-HQt" secondAttribute="trailing" constant="32" id="PAi-jD-8sx"/>
+                            <constraint firstItem="7D0-0c-HQt" firstAttribute="leading" secondItem="2xp-gd-Klz" secondAttribute="leading" constant="32" id="lxc-SW-cKR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5yK-r7-U3w"/>
+                    <connections>
+                        <outlet property="mealDescriptionLabel" destination="DNO-yH-TL9" id="YsC-jG-0YU"/>
+                        <outlet property="mealImage" destination="hKf-Xw-tzX" id="7ct-aj-1eA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZk-sw-x8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3654" y="-21"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tbJ-aI-yUe">
