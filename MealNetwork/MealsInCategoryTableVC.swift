@@ -9,14 +9,15 @@ import UIKit
 
 class MealsInCategoryTableVC: UITableViewController {
     
-    private var mealsInCategory: MealsInCategory?
+//    private var mealsInCategory: MealsInCategory?
+    var categories1: Categories?
     var categoryName: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = categoryName
-        NetworkManager.shared.fetchMealsInCategory(from: "https://www.themealdb.com/api/json/v1/1/filter.php?c=\(categoryName ?? "0")") { meals in
-            self.mealsInCategory = meals
+        NetworkManager.shared.fetchCategories(from: "https://www.themealdb.com/api/json/v1/1/filter.php?c=\(categoryName ?? "0")") { categories in
+            self.categories1 = categories
             self.tableView.reloadData()
         }
     }
@@ -25,7 +26,8 @@ class MealsInCategoryTableVC: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.mealsInCategory?.meals.count ?? 0
+        let count = categories1?.categories.meals.count
+        return self.categories?.categories.meals.count
         
     }
 

@@ -8,8 +8,8 @@
 import UIKit
 
 class CategoriesTableVC: UITableViewController {
-    let cateriesStringURL = "https://www.themealdb.com/api/json/v1/1/categories.php"
-    var categories: Categories?
+    let cateriesStringURL = "https://www.themealdb.com/api/json/v1/1/filter.php?c=chicken"
+    private var categories: Categories?
 
     override func viewDidLoad() {
         super.viewDidLoad()

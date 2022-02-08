@@ -16,20 +16,9 @@ class MealViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = mealId
-
-        // Do any additional setup after loading the view.
+        NetworkManager.shared.fetchMeal(from: "https://www.themealdb.com/api/json/v1/1/lookup.php?i=\(mealId ?? "")") { meal in
+            self.meal = meal
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
